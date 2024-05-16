@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcode</title>
+  <script src="https://kit.fontawesome.com/edbc430359.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <link rel="icon" href="./assets/favicon icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <img src="/assets/logo.png" id="logo">
+    </div>
+
+    <!-- download button -->
+    <div class="navbar-toggle">
+      <button class="navbar-button" id="download-button">Download Source <i class="fa-solid fa-download"></i></button>
+    </div>
+  </nav>
+
+  <!-- real body where textarea is present -->
+  <div class="container">
+    <!-- all html , css , js block -->
+    <div class="left">
+      <label><i class="fa-brands fa-html5"></i> HTML</label>
+      <textarea name="html-code" id="html-code" oninput="run()" class="textarea"></textarea>
+
+      <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+      <textarea name="css-code" id="css-code" oninput="run()" class="textarea"></textarea>
+
+      <label><i class="fa-brands fa-js"></i> Javascript</label>
+      <textarea name="js-code" id="js-code" oninput="run()" class="textarea"></textarea>
+    </div>
+
+    <!-- output block -->
+    <div class="right">
+      <label><i class="fa-solid fa-play"></i> Output</label>
+      <iframe id="output" class="output-right"></iframe>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
