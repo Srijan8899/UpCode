@@ -9,6 +9,14 @@
   <script src="https://kit.fontawesome.com/edbc430359.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
   <link rel="icon" href="./assets/favicon icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/yonce.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closetag.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,13 +39,13 @@
     <!-- all html , css , js block -->
     <div class="left">
       <label><i class="fa-brands fa-html5"></i> HTML</label>
-      <textarea name="html-code" id="html-code" oninput="run()" class="textarea"></textarea>
+      <textarea id="html-code"></textarea>
 
       <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
-      <textarea name="css-code" id="css-code" oninput="run()" class="textarea"></textarea>
+      <textarea id="css-code"></textarea>
 
       <label><i class="fa-brands fa-js"></i> Javascript</label>
-      <textarea name="js-code" id="js-code" oninput="run()" class="textarea"></textarea>
+      <textarea id="js-code"></textarea>
     </div>
 
     <!-- output block -->
